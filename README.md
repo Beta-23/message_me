@@ -10,6 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install to local machine:
 
+```
 macOS Mojave
 Homebrew 2.1.2
 Bundler version 2.0.1 
@@ -21,9 +22,6 @@ rubygems 3.0.3
 Semantic 2.4
 
 ```
-
-```
-
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
