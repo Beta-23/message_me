@@ -75,7 +75,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.5)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.10.0)
@@ -95,7 +95,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    loofah (2.2.3)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -109,12 +109,17 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.10)
     nio4r (2.3.1)
-    nokogiri (1.10.3)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     public_suffix (3.0.3)
+<<<<<<< HEAD
     puma (4.3.3)
       nio4r (~> 2.0)
     rack (2.0.7)
+=======
+    puma (3.12.3)
+    rack (2.0.8)
+>>>>>>> a9f2fd988f60fb7f28b81522e1d94cb2d4dcc3f2
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.3)
@@ -141,13 +146,13 @@ GEM
       method_source
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
-    rake (12.3.2)
+    rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     regexp_parser (1.5.0)
     ruby_dep (1.5.0)
-    rubyzip (1.2.2)
+    rubyzip (1.3.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -212,7 +217,11 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+<<<<<<< HEAD
   puma (>= 3.12.4)
+=======
+  puma (~> 3.12)
+>>>>>>> a9f2fd988f60fb7f28b81522e1d94cb2d4dcc3f2
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
   selenium-webdriver
