@@ -5,18 +5,20 @@ class SessionsController < ApplicationController
   end
 
   def create
-    # user = User.find_by(email: params[:session][:email].downcase)
-    # if user && user.authenticate(params[:session][:password])
-    #   #session hash that will be remembered by the browser cookies
-    #   session[:user_id] = user.id
-    #   flash[:success] = "horay! you have logged in successfully"
-    #   redirect_to user_path(user)
-    
-    # else
-      
-    #   flash.now[:danger] = "There's an error with your username or password"
-      
-    #   render 'new'
-    # end
+    user = User.find_by(username: params[:session][:username])
+    if user && user.authenticate(params[:session][:password])
+      session[:user_id] = user.id
+      flash[:success] = "You have logged in successfully"
+      redirect_to root_path
+    else
+      flash.now[:error] = "Username or Password is invalid"
+      render 'new'
+    end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    flash[:success] = "You have logged out, see you soon!"
+    redirect_to login_path
   end
 end
